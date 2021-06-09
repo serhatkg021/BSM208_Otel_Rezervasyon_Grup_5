@@ -1,0 +1,14 @@
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.exe
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.deps.json
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.runtimeconfig.json
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.runtimeconfig.dev.json
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.dll
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\netcoreapp3.1\bsm208donemprojesigrup5.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.Form1.resources
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.csproj.GenerateResource.cache
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.AssemblyInfoInputs.cache
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.AssemblyInfo.cs
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.csproj.CoreCompileInputs.cache
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.dll
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\Deneme\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\netcoreapp3.1\bsm208donemprojesigrup5.genruntimeconfig.cache
