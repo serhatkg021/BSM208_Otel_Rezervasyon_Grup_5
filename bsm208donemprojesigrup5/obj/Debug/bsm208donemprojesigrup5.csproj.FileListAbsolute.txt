@@ -11,5 +11,5 @@ D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\MicroServices.dll
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\Entities.pdb
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\MicroServices.pdb
-D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.Form1.resources
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CopyComplete
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmGirisEkrani.resources

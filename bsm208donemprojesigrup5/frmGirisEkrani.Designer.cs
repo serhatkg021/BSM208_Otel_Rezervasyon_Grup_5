@@ -1,7 +1,7 @@
 ﻿
 namespace bsm208donemprojesigrup5
 {
-    partial class Form1
+    partial class frmGirisEkrani
     {
         /// <summary>
         /// Required designer variable.
@@ -79,7 +79,7 @@ namespace bsm208donemprojesigrup5
             this.label2.TabIndex = 4;
             this.label2.Text = "Şifre";
             // 
-            // Form1
+            // frmGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -89,8 +89,8 @@ namespace bsm208donemprojesigrup5
             this.Controls.Add(this.btnGirisYap);
             this.Controls.Add(this.tbSifre);
             this.Controls.Add(this.tbKullaniciAd);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmGirisEkrani";
+            this.Text = "Giriş Ekranı";
             this.ResumeLayout(false);
             this.PerformLayout();
 

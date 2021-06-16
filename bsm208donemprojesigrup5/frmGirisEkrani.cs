@@ -12,9 +12,9 @@ using MicroServices;
 
 namespace bsm208donemprojesigrup5
 {
-    public partial class Form1 : Form
+    public partial class frmGirisEkrani : Form
     {
-        public Form1()
+        public frmGirisEkrani()
         {
             InitializeComponent();
         }

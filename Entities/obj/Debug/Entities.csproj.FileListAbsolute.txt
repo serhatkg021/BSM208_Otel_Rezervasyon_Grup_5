@@ -3,3 +3,4 @@ D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\Entities\bin\Debug\Entities.
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.dll
 D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.csprojAssemblyReference.cache
