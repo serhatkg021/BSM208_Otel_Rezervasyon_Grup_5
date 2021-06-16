@@ -1,0 +1,9 @@
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\bin\Debug\MicroServices.dll
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\bin\Debug\MicroServices.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\bin\Debug\Entities.dll
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\bin\Debug\Entities.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csprojAssemblyReference.cache
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CoreCompileInputs.cache
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CopyComplete
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.dll
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.pdb

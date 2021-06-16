@@ -1,0 +1,15 @@
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.exe.config
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.exe
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csprojAssemblyReference.cache
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.Properties.Resources.resources
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.GenerateResource.cache
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CoreCompileInputs.cache
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.exe
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\Entities.dll
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\MicroServices.dll
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\Entities.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\bin\Debug\MicroServices.pdb
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.Form1.resources
+D:\Okul\Programlama Dilleri\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CopyComplete
