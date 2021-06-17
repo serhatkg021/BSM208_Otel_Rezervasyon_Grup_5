@@ -37,13 +37,14 @@ namespace MicroServices
             return donus;
         }
 
-        public bool ekle(Kullanici k)
+        public bool kullaniciEkle(Kullanici k)
         {
             bool donus = false;
-            string sorguString = "INSERT INTO kullanicilar (kullaniciAdi,sifre,dogumTarih,hesapTur,durum) Values (@kAd , @kSifre, @kDogumTarih, @kHesapTur, @kDurum)";
+            string sorguString = "INSERT INTO kullanicilar (kullaniciAdi,sifre,kullaniciAdiSoyadi,dogumTarihi,hesapTuru,aktiflik) Values (@kAd , @kSifre, @kAdSoyad ,@kDogumTarih, @kHesapTur, @kDurum)";
             SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
             sorgu.Parameters.AddWithValue("@kAd", k.kullaniciAdi);
             sorgu.Parameters.AddWithValue("@kSifre", k.sifre);
+            sorgu.Parameters.AddWithValue("@kAdSoyad", k.kullaniciAdiSoyadi);
             sorgu.Parameters.AddWithValue("@kDogumTarih", k.dogumTarih);
             sorgu.Parameters.AddWithValue("@kHesapTur", k.hesapTur);
             sorgu.Parameters.AddWithValue("@kDurum", k.durum);

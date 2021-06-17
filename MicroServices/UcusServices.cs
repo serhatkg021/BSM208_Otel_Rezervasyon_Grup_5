@@ -23,7 +23,7 @@ namespace MicroServices
         public bool ucusEkle(Ucus u)
         { 
             bool donus = false;
-            string sorguString = "INSERT INTO ucuslar (kalkisYeri,inisYeri,havayoluAdi,seferTarih,durum) Values (@uKalkisYeri , @uInisYeri, @uHavayoluAdi, @uSeferTarih, @uDurum)";
+            string sorguString = "INSERT INTO ucuslar (kalkisYeri,inisYeri,havayoluAdi,seferTarihi,aktiflik) Values (@uKalkisYeri , @uInisYeri, @uHavayoluAdi, @uSeferTarih, @uDurum)";
             SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
             sorgu.Parameters.AddWithValue("@uKalkisYeri", u.kalkisYeri);
             sorgu.Parameters.AddWithValue("@uInisYeri", u.inisYeri);
@@ -36,9 +36,6 @@ namespace MicroServices
             {
                 donus = true;
             }
-
-            Ucus[] ucuslar = new Ucus[ciktiSayi];
-
             baglanti.Close();
             return donus;
         }

@@ -11,6 +11,7 @@ namespace Entities
         public int id { get; set; }
         public string kullaniciAdi { get; set; }
         public string sifre { get; set; }
+        public string kullaniciAdiSoyadi { get; set; }
         public DateTime dogumTarih { get; set; }
         public int hesapTur { get; set; }
         public DateTime olusturulmaTarih { get; set; }

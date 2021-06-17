@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entiti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServices", "MicroServices\MicroServices.csproj", "{55B03292-C3F3-4BE4-A08D-8E427F94F024}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKullaniciServices", "TestKullaniciServices\TestKullaniciServices.csproj", "{FA1F82FF-DFCE-4A8A-B2A9-CA5BD4014555}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServices", "TestKullaniciServices\TestServices.csproj", "{FA1F82FF-DFCE-4A8A-B2A9-CA5BD4014555}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
