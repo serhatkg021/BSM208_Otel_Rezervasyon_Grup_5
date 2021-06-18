@@ -2,6 +2,7 @@
 using System;
 using Entities;
 using MicroServices;
+using System.Collections.Generic;
 
 namespace TestServices
 {
@@ -14,11 +15,27 @@ namespace TestServices
             RezervasyonServices servis = new RezervasyonServices();
             Kullanici denemeKullanici = new Kullanici();
             denemeKullanici.id = 1;
+            List<Rezervasyon> rezervasyonlar = new List<Rezervasyon>();
 
-            Rezervasyon donus = servis.kullaniciRezervasyonListe(denemeKullanici);
+            rezervasyonlar = servis.kullaniciRezervasyonListe(denemeKullanici);
 
             bool sonuc = false;
-            if (donus != null)
+            if (rezervasyonlar.Count != 0)
+            {
+                sonuc = true;
+            }
+            Assert.AreEqual(sonuc, true);
+        }
+        [TestMethod]
+        public void yoneticiRezervasyonListe()
+        {
+            RezervasyonServices servis = new RezervasyonServices();
+            List<Rezervasyon> rezervasyonlar = new List<Rezervasyon>();
+
+            rezervasyonlar = servis.yoneticiRezervasyonListe();
+
+            bool sonuc = false;
+            if (rezervasyonlar.Count != 0)
             {
                 sonuc = true;
             }

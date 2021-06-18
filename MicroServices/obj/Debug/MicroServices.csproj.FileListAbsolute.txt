@@ -16,3 +16,11 @@ C:\Users\SKG\Desktop\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServic
 C:\Users\SKG\Desktop\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CopyComplete
 C:\Users\SKG\Desktop\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.dll
 C:\Users\SKG\Desktop\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\bin\Debug\MicroServices.dll
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\bin\Debug\MicroServices.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\bin\Debug\Entities.dll
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\bin\Debug\Entities.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CoreCompileInputs.cache
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CopyComplete
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.dll
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.pdb
