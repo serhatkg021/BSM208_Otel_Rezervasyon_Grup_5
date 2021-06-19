@@ -13,11 +13,16 @@ namespace TestServices
         {
             Kullanici denemeKullanici = new Kullanici();
             KullaniciServices servis = new KullaniciServices();
-
             denemeKullanici.kullaniciAdi = "serhat";
             denemeKullanici.sifre = "serhat";
-            bool donus = servis.girisKontrol(denemeKullanici);
-            Assert.AreEqual(donus, true);
+            Kullanici girisYapan = new Kullanici();
+            girisYapan = servis.girisKontrol(denemeKullanici);
+            bool sonuc = false;
+            if (girisYapan != null)
+            {
+                sonuc = true;
+            }
+            Assert.AreEqual(sonuc, true);
         }
 
         [TestMethod]

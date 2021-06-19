@@ -2,6 +2,7 @@
 using System;
 using Entities;
 using MicroServices;
+using System.Data;
 
 namespace TestServices
 {
@@ -22,6 +23,19 @@ namespace TestServices
 
             bool donus = servis.ucusEkle(denemeUcus);
             Assert.AreEqual(donus, true);
+        }
+
+        [TestMethod]
+        public void ucusListe()
+        {
+            UcusServices servis = new UcusServices();
+            DataTable dt = servis.ucusListe();
+            bool sonuc = false;
+            if (dt != null && dt.Rows.Count > 0)
+            {
+                sonuc = true;
+            }
+            Assert.AreEqual(sonuc, true);
         }
     }
 }
