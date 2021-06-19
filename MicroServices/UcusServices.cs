@@ -16,10 +16,17 @@ namespace MicroServices
         {
             baglanti = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bsm208donemprojesigrup5; Integrated Security = True;");
         }
-        /*public DataTable ucusListe()
-        { 
+        
+        public DataTable ucusListe()
+        {
+            baglanti.Open();
+            string sorguString = "Select * FROM ucuslar";
+            SqlDataAdapter da = new SqlDataAdapter(sorguString, baglanti);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            return dt;
+        }
 
-        }*/
         public bool ucusEkle(Ucus u)
         { 
             bool donus = false;
