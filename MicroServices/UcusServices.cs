@@ -19,11 +19,12 @@ namespace MicroServices
         
         public DataTable ucusListe()
         {
-            baglanti.Open();
             string sorguString = "Select * FROM ucuslar";
             SqlDataAdapter da = new SqlDataAdapter(sorguString, baglanti);
             DataTable dt = new DataTable();
+            baglanti.Open();
             da.Fill(dt);
+            baglanti.Close();
             return dt;
         }
 
