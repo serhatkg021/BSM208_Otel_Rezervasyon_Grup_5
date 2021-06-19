@@ -21,7 +21,6 @@ namespace MicroServices
 
         public List<Rezervasyon> kullaniciRezervasyonListe(Kullanici k)
         {
-            bool donus = false;
             string sorguString = "SELECT kr.kullaniciRezervasyonID, kr.acentaAdi, k.kullaniciID, k.kullaniciAdiSoyadi," +
                 "u.ucuslarID, u.havayoluAdi, u.kalkisYeri, u.inisYeri, u.seferTarihi," +
                 "kr.koltukNo, kr.biletFiyati , kr.olusturmaTarih FROM kullaniciRezervasyon as kr " +

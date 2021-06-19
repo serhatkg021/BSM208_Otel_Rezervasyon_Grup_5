@@ -20,7 +20,7 @@ namespace MicroServices
             baglanti = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bsm208donemprojesigrup5; Integrated Security = True;");
         }
 
-        public bool girisKontrol(Kullanici k)
+        public Kullanici girisKontrol(Kullanici k)
         {
             bool donus = false; 
             string sorguString = "SELECT * FROM kullanicilar WHERE kullaniciAdi=@kAd AND sifre=@kSifre";
@@ -29,12 +29,24 @@ namespace MicroServices
             sorgu.Parameters.AddWithValue("@kSifre", k.sifre);
             baglanti.Open();
             SqlDataReader cikti = sorgu.ExecuteReader(); // İşlemdemden etkilenen kayıtları getirir
-            if (cikti.HasRows)
+            Kullanici girisYapan = new Kullanici();
+            if (cikti.Read())
             {
-                donus = true;
+                girisYapan.id = Convert.ToInt32(cikti["kullaniciID"]);
+                girisYapan.kullaniciAdi = Convert.ToString(cikti["kullaniciAdi"]);
+                girisYapan.sifre = Convert.ToString(cikti["sifre"]);
+                girisYapan.kullaniciAdiSoyadi = Convert.ToString(cikti["kullaniciAdiSoyadi"]);
+                girisYapan.dogumTarih = Convert.ToDateTime(cikti["dogumTarihi"]);
+                girisYapan.hesapTur = Convert.ToInt32(cikti["hesapTuru"]);
+                girisYapan.olusturulmaTarih = Convert.ToDateTime(cikti["olusturulmaTarihi"]);
+                girisYapan.durum = Convert.ToBoolean(cikti["aktiflik"]);
+            }
+            else
+            {
+                girisYapan = null;
             }
             baglanti.Close();
-            return donus;
+            return girisYapan;
         }
 
         public bool kullaniciEkle(Kullanici k)

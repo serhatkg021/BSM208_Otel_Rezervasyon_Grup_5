@@ -24,3 +24,4 @@ D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\o
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csproj.CopyComplete
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.dll
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.pdb
+D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\MicroServices\obj\Debug\MicroServices.csprojAssemblyReference.cache
