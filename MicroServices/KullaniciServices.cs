@@ -69,5 +69,20 @@ namespace MicroServices
             baglanti.Close();
             return donus;
         }
+        public bool kullaniciAdiKontrol(string kAd)     // Sisteme üye olurken kullanıcı adına sahip başka kullanıcı olup olmadığını kontrol eder
+        {
+            bool donus = true;
+            string sorguString = "SELECT kullaniciAdi FROM kullanicilar WHERE kullaniciAdi=@kAd";
+            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
+            sorgu.Parameters.AddWithValue("@kAd", kAd);
+            baglanti.Open();
+            SqlDataReader cikti = sorgu.ExecuteReader(); // İşlemdemden etkilenen kayıtları getirir
+            if (cikti.Read())
+            {
+                donus = false;
+            }
+            baglanti.Close();
+            return donus;
+        }
     }
 }

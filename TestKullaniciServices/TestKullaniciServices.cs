@@ -8,11 +8,11 @@ namespace TestServices
     [TestClass]
     public class TestKullaniciServices
     {
+        KullaniciServices servis = new KullaniciServices();
         [TestMethod]
         public void loginTest()
         {
             Kullanici denemeKullanici = new Kullanici();
-            KullaniciServices servis = new KullaniciServices();
             denemeKullanici.kullaniciAdi = "serhat";
             denemeKullanici.sifre = "serhat";
             Kullanici girisYapan = new Kullanici();
@@ -29,8 +29,6 @@ namespace TestServices
         public void kullaniciEkle()
         {
             Kullanici denemeKullanici = new Kullanici();
-            KullaniciServices servis = new KullaniciServices();
-
             denemeKullanici.kullaniciAdi = "serhat2";
             denemeKullanici.sifre = "serhat2";
             denemeKullanici.kullaniciAdiSoyadi = "Serhat Kadir Gürleyen";
@@ -40,6 +38,13 @@ namespace TestServices
 
             bool donus = servis.kullaniciEkle(denemeKullanici);
             Assert.AreEqual(donus, true);
+        }
+        [TestMethod]
+        public void kullaniciAdiKontrol()
+        {
+            string denemeKullaniciAdi = "serhat";
+            bool donus = servis.kullaniciAdiKontrol(denemeKullaniciAdi);
+            Assert.AreEqual(donus, false);
         }
     }
 }
