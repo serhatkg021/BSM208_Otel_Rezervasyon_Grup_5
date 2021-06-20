@@ -9,12 +9,12 @@ namespace TestServices
     [TestClass]
     public class TestUcusServices
     {
+        UcusServices servis = new UcusServices();
+
         [TestMethod]
         public void ucusEkle()
         {
             Ucus denemeUcus = new Ucus();
-            UcusServices servis = new UcusServices();
-
             denemeUcus.havayoluAdi = "PEGASUS";
             denemeUcus.kalkisYeri = "İstanbul Havalimanı";
             denemeUcus.inisYeri = "Ankara Esenboğa Havalimanı";
@@ -28,7 +28,6 @@ namespace TestServices
         [TestMethod]
         public void ucusListe()
         {
-            UcusServices servis = new UcusServices();
             DataTable dt = servis.ucusListe();
             bool sonuc = false;
             if (dt != null && dt.Rows.Count > 0)
