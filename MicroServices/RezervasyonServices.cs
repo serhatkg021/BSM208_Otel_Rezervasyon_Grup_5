@@ -19,6 +19,27 @@ namespace MicroServices
             baglanti = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bsm208donemprojesigrup5; Integrated Security = True;");
         }
 
+        public bool kullaniciRezervasyonEkle(Rezervasyon r)
+        {
+            bool donus = false;
+            string sorguString = "INSERT INTO kullaniciRezervasyon (kullaniciID,ucusID,koltukNo,acentaAdi,biletFiyati,aktiflik) Values (@kID , @uID , @koltukNO ,@aAdi, @bFiyat, @rDurum)";
+            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
+            sorgu.Parameters.AddWithValue("@kID", r.kullanici.id);
+            sorgu.Parameters.AddWithValue("@uID", r.ucus.id );
+            sorgu.Parameters.AddWithValue("@koltukNO", r.koltukNo);
+            sorgu.Parameters.AddWithValue("@aAdi", r.acentaAdi);
+            sorgu.Parameters.AddWithValue("@bFiyat", r.biletFiyat);
+            sorgu.Parameters.AddWithValue("@rDurum", r.durum);
+            baglanti.Open();
+            int ciktiSayi = sorgu.ExecuteNonQuery(); // İşlemdemden etkilenen kayıt sayısını getirir
+            if (ciktiSayi > 0)
+            {
+                donus = true;
+            }
+            baglanti.Close();
+            return donus;
+        }
+
         public List<Rezervasyon> kullaniciRezervasyonListe(Kullanici k)
         {
             string sorguString = "SELECT kr.kullaniciRezervasyonID, kr.acentaAdi, k.kullaniciID, k.kullaniciAdiSoyadi," +
@@ -62,7 +83,7 @@ namespace MicroServices
                 "kr.koltukNo, kr.biletFiyati , kr.olusturmaTarih FROM kullaniciRezervasyon as kr " +
                 "LEFT JOIN kullanicilar as k ON kr.kullaniciID = k.kullaniciID " +
                 "LEFT JOIN ucuslar as u ON kr.ucusID = u.ucuslarID";
-             
+
             SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
             baglanti.Open();
             SqlDataReader cikti = sorgu.ExecuteReader(); // İşlemdemden etkilenen kayıtları getirir

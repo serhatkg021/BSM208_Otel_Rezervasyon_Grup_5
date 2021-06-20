@@ -10,6 +10,25 @@ namespace TestServices
     public class TestRezervasyonServices
     {
         RezervasyonServices servis = new RezervasyonServices();
+        
+        [TestMethod]
+        public void kullaniciRezervasyonEkle()
+        {
+            Rezervasyon denemeRezervasyon = new Rezervasyon();
+            Kullanici denemeKullanici = new Kullanici();
+            Ucus denemeUcus = new Ucus();
+            denemeKullanici.id = 1;
+            denemeUcus.id = 1;
+            denemeRezervasyon.kullanici = denemeKullanici;
+            denemeRezervasyon.ucus = denemeUcus;
+            denemeRezervasyon.koltukNo = 1;
+            denemeRezervasyon.acentaAdi = "Acenta 1";
+            denemeRezervasyon.biletFiyat = 15;
+            denemeRezervasyon.durum = true;
+            bool sonuc = servis.kullaniciRezervasyonEkle(denemeRezervasyon);
+            Assert.AreEqual(sonuc, true);
+
+        }
         [TestMethod]
         public void kullaniciRezervasyonListe()
         {
