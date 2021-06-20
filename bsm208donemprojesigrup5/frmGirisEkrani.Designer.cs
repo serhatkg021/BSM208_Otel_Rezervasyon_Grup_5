@@ -29,6 +29,7 @@ namespace bsm208donemprojesigrup5
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGirisEkrani));
             this.tbKullaniciAd = new System.Windows.Forms.TextBox();
             this.tbSifre = new System.Windows.Forms.TextBox();
             this.btnGirisYap = new System.Windows.Forms.Button();
@@ -38,57 +39,70 @@ namespace bsm208donemprojesigrup5
             // 
             // tbKullaniciAd
             // 
-            this.tbKullaniciAd.Location = new System.Drawing.Point(74, 95);
+            this.tbKullaniciAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbKullaniciAd.Location = new System.Drawing.Point(129, 185);
             this.tbKullaniciAd.Name = "tbKullaniciAd";
-            this.tbKullaniciAd.Size = new System.Drawing.Size(126, 20);
+            this.tbKullaniciAd.Size = new System.Drawing.Size(126, 26);
             this.tbKullaniciAd.TabIndex = 0;
             // 
             // tbSifre
             // 
-            this.tbSifre.Location = new System.Drawing.Point(74, 135);
+            this.tbSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbSifre.Location = new System.Drawing.Point(129, 235);
             this.tbSifre.Name = "tbSifre";
             this.tbSifre.PasswordChar = '*';
-            this.tbSifre.Size = new System.Drawing.Size(126, 20);
+            this.tbSifre.Size = new System.Drawing.Size(126, 26);
             this.tbSifre.TabIndex = 1;
             // 
             // btnGirisYap
             // 
-            this.btnGirisYap.Location = new System.Drawing.Point(125, 190);
+            this.btnGirisYap.BackColor = System.Drawing.Color.Yellow;
+            this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGirisYap.Location = new System.Drawing.Point(154, 292);
             this.btnGirisYap.Name = "btnGirisYap";
-            this.btnGirisYap.Size = new System.Drawing.Size(75, 23);
+            this.btnGirisYap.Size = new System.Drawing.Size(101, 39);
             this.btnGirisYap.TabIndex = 2;
             this.btnGirisYap.Text = "Giriş Yap";
-            this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.UseVisualStyleBackColor = false;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 76);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(12, 185);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kullanıcı Adı";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 119);
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(12, 235);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(28, 13);
+            this.label2.Size = new System.Drawing.Size(42, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "Şifre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // frmGirisEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 336);
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(267, 356);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGirisYap);
             this.Controls.Add(this.tbSifre);
             this.Controls.Add(this.tbKullaniciAd);
+            this.DoubleBuffered = true;
             this.Name = "frmGirisEkrani";
             this.Text = "Giriş Ekranı";
             this.ResumeLayout(false);

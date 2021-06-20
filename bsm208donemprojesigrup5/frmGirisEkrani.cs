@@ -38,5 +38,10 @@ namespace bsm208donemprojesigrup5
                 MessageBox.Show("Hatalı Giriş Denemesi");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
