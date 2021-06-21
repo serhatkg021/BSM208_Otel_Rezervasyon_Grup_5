@@ -18,7 +18,7 @@ namespace TestServices
             Kullanici denemeKullanici = new Kullanici();
             Ucus denemeUcus = new Ucus();
             denemeKullanici.id = 1;
-            denemeUcus.id = 1;
+            denemeUcus.id = 2;
             denemeRezervasyon.kullanici = denemeKullanici;
             denemeRezervasyon.ucus = denemeUcus;
             denemeRezervasyon.koltukNo = 1;
