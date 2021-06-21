@@ -58,6 +58,12 @@
     <Compile Include="frmKullaniciKayitEkrani.Designer.cs">
       <DependentUpon>frmKullaniciKayitEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRezervasyonEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRezervasyonEkrani.Designer.cs">
+      <DependentUpon>frmRezervasyonEkrani.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGirisEkrani.resx">
@@ -65,6 +71,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKullaniciKayitEkrani.resx">
       <DependentUpon>frmKullaniciKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRezervasyonEkrani.resx">
+      <DependentUpon>frmRezervasyonEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
