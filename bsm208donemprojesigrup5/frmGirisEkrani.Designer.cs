@@ -58,9 +58,9 @@ namespace bsm208donemprojesigrup5
             // 
             this.btnGirisYap.BackColor = System.Drawing.Color.Yellow;
             this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGirisYap.Location = new System.Drawing.Point(154, 292);
+            this.btnGirisYap.Location = new System.Drawing.Point(129, 292);
             this.btnGirisYap.Name = "btnGirisYap";
-            this.btnGirisYap.Size = new System.Drawing.Size(101, 39);
+            this.btnGirisYap.Size = new System.Drawing.Size(126, 39);
             this.btnGirisYap.TabIndex = 2;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = false;

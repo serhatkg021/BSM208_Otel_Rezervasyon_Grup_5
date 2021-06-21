@@ -47,34 +47,36 @@ namespace bsm208donemprojesigrup5
             // tbKullaniciAdi
             // 
             this.tbKullaniciAdi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbKullaniciAdi.Location = new System.Drawing.Point(390, 138);
+            this.tbKullaniciAdi.Location = new System.Drawing.Point(415, 145);
             this.tbKullaniciAdi.Name = "tbKullaniciAdi";
-            this.tbKullaniciAdi.Size = new System.Drawing.Size(100, 20);
+            this.tbKullaniciAdi.Size = new System.Drawing.Size(200, 20);
             this.tbKullaniciAdi.TabIndex = 2;
             // 
             // tbAdSoyad
             // 
             this.tbAdSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbAdSoyad.Location = new System.Drawing.Point(390, 43);
+            this.tbAdSoyad.Location = new System.Drawing.Point(415, 50);
             this.tbAdSoyad.Name = "tbAdSoyad";
-            this.tbAdSoyad.Size = new System.Drawing.Size(100, 20);
-            this.tbAdSoyad.TabIndex = 3;
+            this.tbAdSoyad.Size = new System.Drawing.Size(200, 20);
+            this.tbAdSoyad.TabIndex = 0;
             // 
             // tbSifre
             // 
             this.tbSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbSifre.Location = new System.Drawing.Point(390, 188);
+            this.tbSifre.Location = new System.Drawing.Point(415, 195);
             this.tbSifre.Name = "tbSifre";
-            this.tbSifre.Size = new System.Drawing.Size(100, 20);
-            this.tbSifre.TabIndex = 4;
+            this.tbSifre.PasswordChar = '*';
+            this.tbSifre.Size = new System.Drawing.Size(200, 20);
+            this.tbSifre.TabIndex = 3;
             // 
             // tbSifreTekrar
             // 
             this.tbSifreTekrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.tbSifreTekrar.Location = new System.Drawing.Point(390, 233);
+            this.tbSifreTekrar.Location = new System.Drawing.Point(415, 240);
             this.tbSifreTekrar.Name = "tbSifreTekrar";
-            this.tbSifreTekrar.Size = new System.Drawing.Size(100, 20);
-            this.tbSifreTekrar.TabIndex = 5;
+            this.tbSifreTekrar.PasswordChar = '*';
+            this.tbSifreTekrar.Size = new System.Drawing.Size(200, 20);
+            this.tbSifreTekrar.TabIndex = 4;
             // 
             // label6
             // 
@@ -143,8 +145,8 @@ namespace bsm208donemprojesigrup5
             this.btnKaydet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnKaydet.Location = new System.Drawing.Point(105, 320);
             this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(385, 56);
-            this.btnKaydet.TabIndex = 12;
+            this.btnKaydet.Size = new System.Drawing.Size(415, 56);
+            this.btnKaydet.TabIndex = 5;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = false;
             // 
@@ -153,10 +155,10 @@ namespace bsm208donemprojesigrup5
             this.dtmDogumTarihi.CalendarForeColor = System.Drawing.Color.Black;
             this.dtmDogumTarihi.CalendarMonthBackground = System.Drawing.Color.White;
             this.dtmDogumTarihi.CalendarTitleBackColor = System.Drawing.Color.White;
-            this.dtmDogumTarihi.Location = new System.Drawing.Point(390, 90);
+            this.dtmDogumTarihi.Location = new System.Drawing.Point(415, 96);
             this.dtmDogumTarihi.Name = "dtmDogumTarihi";
             this.dtmDogumTarihi.Size = new System.Drawing.Size(200, 20);
-            this.dtmDogumTarihi.TabIndex = 13;
+            this.dtmDogumTarihi.TabIndex = 1;
             // 
             // lblKullaniciAdiUyari
             // 
@@ -172,7 +174,7 @@ namespace bsm208donemprojesigrup5
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(590, 485);
+            this.ClientSize = new System.Drawing.Size(627, 489);
             this.Controls.Add(this.lblKullaniciAdiUyari);
             this.Controls.Add(this.dtmDogumTarihi);
             this.Controls.Add(this.btnKaydet);
@@ -186,7 +188,7 @@ namespace bsm208donemprojesigrup5
             this.Controls.Add(this.tbAdSoyad);
             this.Controls.Add(this.tbKullaniciAdi);
             this.Name = "frmKullaniciKayitEkrani";
-            this.Text = "frmKullaniciKayitEkrani";
+            this.Text = "Kullanıcı Kayıt Ekranı";
             this.Load += new System.EventHandler(this.frmKullaniciKayitEkrani_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
