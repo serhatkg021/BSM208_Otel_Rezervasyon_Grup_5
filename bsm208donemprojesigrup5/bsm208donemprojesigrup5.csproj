@@ -49,13 +49,22 @@
     <Compile Include="frmGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmKullaniciKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmGirisEkrani.Designer.cs">
       <DependentUpon>frmGirisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKullaniciKayitEkrani.Designer.cs">
+      <DependentUpon>frmKullaniciKayitEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGirisEkrani.resx">
       <DependentUpon>frmGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciKayitEkrani.resx">
+      <DependentUpon>frmKullaniciKayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
