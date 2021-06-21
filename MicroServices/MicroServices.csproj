@@ -45,6 +45,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RezervasyonServices.cs" />
     <Compile Include="UcusServices.cs" />
+    <Compile Include="BildirimServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entities\Entities.csproj">
