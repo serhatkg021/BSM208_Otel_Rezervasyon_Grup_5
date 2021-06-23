@@ -16,13 +16,22 @@ namespace MicroServices
         {
             baglanti = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bsm208donemprojesigrup5; Integrated Security = True;");
         }
-        
-        public DataTable ucusListe()
+
+        public DataTable ucusListe(Ucus u)
         {
-            string sorguString = "Select * FROM ucuslar";
-            SqlDataAdapter da = new SqlDataAdapter(sorguString, baglanti);
-            DataTable dt = new DataTable();
+            string sorguString = "Select * FROM ucuslar " +
+                                    "WHERE kalkisYeri=@kYeri " +
+                                    "AND inisYeri =@iYeri " +
+                                    "AND seferTarihi=@sTarih " +
+                                    "AND havayoluAdi=@hAdi";
+            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
+            sorgu.Parameters.AddWithValue("@kYeri", u.kalkisYeri);
+            sorgu.Parameters.AddWithValue("@iYeri", u.inisYeri);
+            sorgu.Parameters.AddWithValue("@sTarih", u.seferTarih);
+            sorgu.Parameters.AddWithValue("@hAdi", u.havayoluAdi);
             baglanti.Open();
+            SqlDataAdapter da = new SqlDataAdapter(sorgu);
+            DataTable dt = new DataTable();
             da.Fill(dt);
             baglanti.Close();
             return dt;

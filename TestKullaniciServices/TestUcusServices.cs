@@ -28,7 +28,12 @@ namespace TestServices
         [TestMethod]
         public void ucusListe()
         {
-            DataTable dt = servis.ucusListe();
+            Ucus arananUcus = new Ucus();
+            arananUcus.kalkisYeri = "İstanbul Havalimanı";
+            arananUcus.inisYeri = "Ankara Esenboğa Havalimanı";
+            arananUcus.seferTarih = Convert.ToDateTime("18.06.2021 18:30");
+            arananUcus.havayoluAdi = "PEGASUS";
+            DataTable dt = servis.ucusListe(arananUcus);
             bool sonuc = false;
             if (dt != null && dt.Rows.Count > 0)
             {
