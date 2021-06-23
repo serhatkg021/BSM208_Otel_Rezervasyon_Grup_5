@@ -27,9 +27,10 @@ namespace bsm208donemprojesigrup5
             girisKullanici.kullaniciAdi = tbKullaniciAd.Text;
             girisKullanici.sifre = tbSifre.Text;
 
-            bool durum = ms.girisKontrol(girisKullanici);
+            Kullanici donenKullanici = new Kullanici(); 
+            donenKullanici =  ms.girisKontrol(girisKullanici);
 
-            if (durum)
+            if (donenKullanici != null)
             {
                 MessageBox.Show("Hoşgeldiniz");
             }

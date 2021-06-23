@@ -29,7 +29,6 @@ namespace bsm208donemprojesigrup5
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKullaniciKayitEkrani));
             this.tbKullaniciAdi = new System.Windows.Forms.TextBox();
             this.tbAdSoyad = new System.Windows.Forms.TextBox();
             this.tbSifre = new System.Windows.Forms.TextBox();
@@ -172,7 +171,6 @@ namespace bsm208donemprojesigrup5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(627, 489);
             this.Controls.Add(this.lblKullaniciAdiUyari);
