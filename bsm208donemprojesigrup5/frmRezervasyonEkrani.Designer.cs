@@ -59,6 +59,9 @@ namespace bsm208donemprojesigrup5
             // cbHavaYollari
             // 
             this.cbHavaYollari.FormattingEnabled = true;
+            this.cbHavaYollari.Items.AddRange(new object[] {
+            "THY",
+            "PEGASUS"});
             this.cbHavaYollari.Location = new System.Drawing.Point(61, 36);
             this.cbHavaYollari.Margin = new System.Windows.Forms.Padding(4);
             this.cbHavaYollari.Name = "cbHavaYollari";
@@ -68,6 +71,9 @@ namespace bsm208donemprojesigrup5
             // cbNereye
             // 
             this.cbNereye.FormattingEnabled = true;
+            this.cbNereye.Items.AddRange(new object[] {
+            "Ankara Esenboğa Havalimanı",
+            "İstanbul Havalimanı"});
             this.cbNereye.Location = new System.Drawing.Point(357, 148);
             this.cbNereye.Margin = new System.Windows.Forms.Padding(4);
             this.cbNereye.Name = "cbNereye";
@@ -77,6 +83,9 @@ namespace bsm208donemprojesigrup5
             // cbNereden
             // 
             this.cbNereden.FormattingEnabled = true;
+            this.cbNereden.Items.AddRange(new object[] {
+            "İstanbul Havalimanı",
+            "Ankara Esenboğa Havalimanı"});
             this.cbNereden.Location = new System.Drawing.Point(61, 148);
             this.cbNereden.Margin = new System.Windows.Forms.Padding(4);
             this.cbNereden.Name = "cbNereden";
@@ -87,6 +96,7 @@ namespace bsm208donemprojesigrup5
             // 
             this.dgvUcusListe.AllowUserToAddRows = false;
             this.dgvUcusListe.AllowUserToDeleteRows = false;
+            this.dgvUcusListe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUcusListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUcusListe.Location = new System.Drawing.Point(61, 354);
             this.dgvUcusListe.Margin = new System.Windows.Forms.Padding(4);
@@ -141,7 +151,7 @@ namespace bsm208donemprojesigrup5
             // 
             // dtpGidisTarihi
             // 
-            this.dtpGidisTarihi.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            this.dtpGidisTarihi.CustomFormat = "dd/MM/yyyy HH:mm ";
             this.dtpGidisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpGidisTarihi.Location = new System.Drawing.Point(61, 268);
             this.dtpGidisTarihi.Margin = new System.Windows.Forms.Padding(4);
@@ -194,6 +204,7 @@ namespace bsm208donemprojesigrup5
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRezervasyonEkrani";
             this.Text = "Rezarvasyon Ekranı";
+            this.Load += new System.EventHandler(this.frmRezervasyonEkrani_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUcusListe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

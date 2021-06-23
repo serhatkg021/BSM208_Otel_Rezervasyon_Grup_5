@@ -14,21 +14,26 @@ namespace bsm208donemprojesigrup5
 {
     public partial class frmRezervasyonEkrani : Form
     {
-        UcusServices servis = new UcusServices(); 
-        public frmRezervasyonEkrani()
+        UcusServices servis = new UcusServices();
+        Kullanici sistemKullanici = new Kullanici();
+        public frmRezervasyonEkrani(Kullanici k)
         {
             InitializeComponent();
+            sistemKullanici = k;
         }
 
         private void btnUcakBiletiAra_Click(object sender, EventArgs e)
         {
-            //Ucus arananUcus = new Ucus();
-            //arananUcus.kalkisYeri = cbNereden.Text.ToString();
-            //arananUcus.inisYeri = cbNereye.Text.ToString();
-            //arananUcus.seferTarih = dtpGidisTarihi.Value;
-            //arananUcus.havayoluAdi = cbHavaYollari.Text;
-
-            DataTable dt = servis.ucusListe();
+            Ucus arananUcus = new Ucus();
+            arananUcus.kalkisYeri = cbNereden.Text.ToString();
+            arananUcus.inisYeri = cbNereye.Text.ToString();
+            arananUcus.seferTarih = Convert.ToDateTime(dtpGidisTarihi.Text);        
+            arananUcus.havayoluAdi = cbHavaYollari.Text;
+            DataTable dt = servis.ucusListe(arananUcus);
+            if (dt.Rows.Count < 1)
+            {
+                MessageBox.Show("Aradığınız kriterlerde uçuş mevcut değildir.");
+            }
             dgvUcusListe.DataSource = dt;
 
         }
@@ -43,6 +48,11 @@ namespace bsm208donemprojesigrup5
             secilenUcus.havayoluAdi = dgvUcusListe.SelectedRows[0].Cells["havayoluAdi"].Value.ToString();
             secilenUcus.seferTarih = Convert.ToDateTime(dgvUcusListe.SelectedRows[0].Cells["seferTarihi"].Value);
             MessageBox.Show(secilenUcus.id + " " + secilenUcus.havayoluAdi + " " + secilenUcus.kalkisYeri + " " + secilenUcus.inisYeri + " " + secilenUcus.seferTarih);
+        }
+
+        private void frmRezervasyonEkrani_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(sistemKullanici.kullaniciAdiSoyadi);
         }
     }
 }
