@@ -14,6 +14,7 @@ namespace bsm208donemprojesigrup5
 {
     public partial class frmGirisEkrani : Form
     {
+        KullaniciServices servis = new KullaniciServices();
         public frmGirisEkrani()
         {
             InitializeComponent();
@@ -22,27 +23,32 @@ namespace bsm208donemprojesigrup5
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
             Kullanici girisKullanici = new Kullanici();
-            KullaniciServices ms = new KullaniciServices();
+            
 
             girisKullanici.kullaniciAdi = tbKullaniciAd.Text;
             girisKullanici.sifre = tbSifre.Text;
 
             Kullanici donenKullanici = new Kullanici(); 
-            donenKullanici =  ms.girisKontrol(girisKullanici);
+            donenKullanici =  servis.girisKontrol(girisKullanici);
 
             if (donenKullanici != null)
             {
                 MessageBox.Show("Hoşgeldiniz");
+                frmRezervasyonEkrani frmR = new frmRezervasyonEkrani();
+                frmR.Show();
+                
             }
             else
             {
                 MessageBox.Show("Hatalı Giriş Denemesi");
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
+        }      
+        private void tbSifre_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnGirisYap_Click(this, new EventArgs());
+            }
         }
     }
 }
