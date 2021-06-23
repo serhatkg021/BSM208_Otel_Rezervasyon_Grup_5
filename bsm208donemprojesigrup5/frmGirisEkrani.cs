@@ -34,9 +34,9 @@ namespace bsm208donemprojesigrup5
             if (donenKullanici != null)
             {
                 MessageBox.Show("Hoşgeldiniz");
-                frmRezervasyonEkrani frmR = new frmRezervasyonEkrani();
+                frmRezervasyonEkrani frmR = new frmRezervasyonEkrani(donenKullanici);
                 frmR.Show();
-                
+                this.Hide();
             }
             else
             {
@@ -50,5 +50,6 @@ namespace bsm208donemprojesigrup5
                 btnGirisYap_Click(this, new EventArgs());
             }
         }
+
     }
 }
