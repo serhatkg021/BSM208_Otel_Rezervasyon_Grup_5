@@ -22,7 +22,6 @@ namespace MicroServices
 
         public Kullanici girisKontrol(Kullanici k)
         {
-            bool donus = false; 
             string sorguString = "SELECT * FROM kullanicilar WHERE kullaniciAdi=@kAd AND sifre=@kSifre";
             SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
             sorgu.Parameters.AddWithValue("@kAd", k.kullaniciAdi);
