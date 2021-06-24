@@ -16,7 +16,12 @@ namespace bsm208donemprojesigrup5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGirisEkrani());
+            frmRezervasyonEkrani frmR = new frmRezervasyonEkrani();
+            Application.Run(frmR);
+            if (frmR.sayfaDurumu)
+            {
+                Application.Run(new frmGirisEkrani());
+            }
         }
     }
 }

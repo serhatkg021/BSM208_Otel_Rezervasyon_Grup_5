@@ -41,18 +41,20 @@ namespace bsm208donemprojesigrup5
             // tbKullaniciAd
             // 
             this.tbKullaniciAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tbKullaniciAd.Location = new System.Drawing.Point(129, 185);
+            this.tbKullaniciAd.Location = new System.Drawing.Point(172, 228);
+            this.tbKullaniciAd.Margin = new System.Windows.Forms.Padding(4);
             this.tbKullaniciAd.Name = "tbKullaniciAd";
-            this.tbKullaniciAd.Size = new System.Drawing.Size(126, 26);
+            this.tbKullaniciAd.Size = new System.Drawing.Size(167, 30);
             this.tbKullaniciAd.TabIndex = 0;
             // 
             // tbSifre
             // 
             this.tbSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tbSifre.Location = new System.Drawing.Point(129, 235);
+            this.tbSifre.Location = new System.Drawing.Point(172, 289);
+            this.tbSifre.Margin = new System.Windows.Forms.Padding(4);
             this.tbSifre.Name = "tbSifre";
             this.tbSifre.PasswordChar = '*';
-            this.tbSifre.Size = new System.Drawing.Size(126, 26);
+            this.tbSifre.Size = new System.Drawing.Size(167, 30);
             this.tbSifre.TabIndex = 1;
             this.tbSifre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbSifre_KeyDown);
             // 
@@ -60,9 +62,10 @@ namespace bsm208donemprojesigrup5
             // 
             this.btnGirisYap.BackColor = System.Drawing.Color.Yellow;
             this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGirisYap.Location = new System.Drawing.Point(129, 293);
+            this.btnGirisYap.Location = new System.Drawing.Point(172, 361);
+            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.btnGirisYap.Name = "btnGirisYap";
-            this.btnGirisYap.Size = new System.Drawing.Size(126, 39);
+            this.btnGirisYap.Size = new System.Drawing.Size(168, 48);
             this.btnGirisYap.TabIndex = 2;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = false;
@@ -73,9 +76,10 @@ namespace bsm208donemprojesigrup5
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 185);
+            this.label1.Location = new System.Drawing.Point(16, 228);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 20);
+            this.label1.Size = new System.Drawing.Size(119, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kullanıcı Adı";
             // 
@@ -84,9 +88,10 @@ namespace bsm208donemprojesigrup5
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(12, 235);
+            this.label2.Location = new System.Drawing.Point(16, 289);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 20);
+            this.label2.Size = new System.Drawing.Size(52, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Şifre";
             // 
@@ -94,21 +99,23 @@ namespace bsm208donemprojesigrup5
             // 
             this.btnKaydol.BackColor = System.Drawing.Color.Yellow;
             this.btnKaydol.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKaydol.Location = new System.Drawing.Point(16, 293);
+            this.btnKaydol.Location = new System.Drawing.Point(21, 361);
+            this.btnKaydol.Margin = new System.Windows.Forms.Padding(4);
             this.btnKaydol.Name = "btnKaydol";
-            this.btnKaydol.Size = new System.Drawing.Size(93, 39);
+            this.btnKaydol.Size = new System.Drawing.Size(124, 48);
             this.btnKaydol.TabIndex = 3;
             this.btnKaydol.Text = "Kaydol";
             this.btnKaydol.UseVisualStyleBackColor = false;
+            this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
             // frmGirisEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(267, 356);
+            this.ClientSize = new System.Drawing.Size(356, 438);
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,6 +123,7 @@ namespace bsm208donemprojesigrup5
             this.Controls.Add(this.tbSifre);
             this.Controls.Add(this.tbKullaniciAd);
             this.DoubleBuffered = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmGirisEkrani";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Ekranı";

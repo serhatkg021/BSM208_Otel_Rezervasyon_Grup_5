@@ -51,5 +51,10 @@ namespace bsm208donemprojesigrup5
             }
         }
 
+        private void btnKaydol_Click(object sender, EventArgs e)
+        {
+            frmKullaniciKayitEkrani frmKKE = new frmKullaniciKayitEkrani();
+            frmKKE.Show();
+        }
     }
 }
