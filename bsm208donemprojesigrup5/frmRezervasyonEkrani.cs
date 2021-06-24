@@ -27,7 +27,7 @@ namespace bsm208donemprojesigrup5
             Ucus arananUcus = new Ucus();
             arananUcus.kalkisYeri = cbNereden.Text.ToString();
             arananUcus.inisYeri = cbNereye.Text.ToString();
-            arananUcus.seferTarih = Convert.ToDateTime(dtpGidisTarihi.Text);        
+            arananUcus.seferTarih = Convert.ToDateTime(dtpSeferTarihi.Text);        
             arananUcus.havayoluAdi = cbHavaYollari.Text;
             DataTable dt = servis.ucusListe(arananUcus);
             if (dt.Rows.Count < 1)

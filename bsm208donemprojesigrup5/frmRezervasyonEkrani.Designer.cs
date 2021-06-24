@@ -38,20 +38,19 @@ namespace bsm208donemprojesigrup5
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dtpDonusTarihi = new System.Windows.Forms.DateTimePicker();
-            this.dtpGidisTarihi = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dtpSeferTarihi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnKullaniciAyarlari = new System.Windows.Forms.Button();
+            this.btnGirisYap = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUcusListe)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUcakBiletiAra
             // 
-            this.btnUcakBiletiAra.Location = new System.Drawing.Point(812, 177);
-            this.btnUcakBiletiAra.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUcakBiletiAra.Location = new System.Drawing.Point(519, 144);
             this.btnUcakBiletiAra.Name = "btnUcakBiletiAra";
-            this.btnUcakBiletiAra.Size = new System.Drawing.Size(207, 116);
-            this.btnUcakBiletiAra.TabIndex = 5;
+            this.btnUcakBiletiAra.Size = new System.Drawing.Size(269, 94);
+            this.btnUcakBiletiAra.TabIndex = 4;
             this.btnUcakBiletiAra.Text = "Uçak Bileti Ara";
             this.btnUcakBiletiAra.UseVisualStyleBackColor = true;
             this.btnUcakBiletiAra.Click += new System.EventHandler(this.btnUcakBiletiAra_Click);
@@ -62,11 +61,10 @@ namespace bsm208donemprojesigrup5
             this.cbHavaYollari.Items.AddRange(new object[] {
             "THY",
             "PEGASUS"});
-            this.cbHavaYollari.Location = new System.Drawing.Point(61, 36);
-            this.cbHavaYollari.Margin = new System.Windows.Forms.Padding(4);
+            this.cbHavaYollari.Location = new System.Drawing.Point(46, 217);
             this.cbHavaYollari.Name = "cbHavaYollari";
-            this.cbHavaYollari.Size = new System.Drawing.Size(265, 24);
-            this.cbHavaYollari.TabIndex = 0;
+            this.cbHavaYollari.Size = new System.Drawing.Size(200, 21);
+            this.cbHavaYollari.TabIndex = 2;
             // 
             // cbNereye
             // 
@@ -74,11 +72,10 @@ namespace bsm208donemprojesigrup5
             this.cbNereye.Items.AddRange(new object[] {
             "Ankara Esenboğa Havalimanı",
             "İstanbul Havalimanı"});
-            this.cbNereye.Location = new System.Drawing.Point(357, 148);
-            this.cbNereye.Margin = new System.Windows.Forms.Padding(4);
+            this.cbNereye.Location = new System.Drawing.Point(268, 91);
             this.cbNereye.Name = "cbNereye";
-            this.cbNereye.Size = new System.Drawing.Size(265, 24);
-            this.cbNereye.TabIndex = 2;
+            this.cbNereye.Size = new System.Drawing.Size(200, 21);
+            this.cbNereye.TabIndex = 1;
             // 
             // cbNereden
             // 
@@ -86,11 +83,10 @@ namespace bsm208donemprojesigrup5
             this.cbNereden.Items.AddRange(new object[] {
             "İstanbul Havalimanı",
             "Ankara Esenboğa Havalimanı"});
-            this.cbNereden.Location = new System.Drawing.Point(61, 148);
-            this.cbNereden.Margin = new System.Windows.Forms.Padding(4);
+            this.cbNereden.Location = new System.Drawing.Point(46, 91);
             this.cbNereden.Name = "cbNereden";
-            this.cbNereden.Size = new System.Drawing.Size(265, 24);
-            this.cbNereden.TabIndex = 1;
+            this.cbNereden.Size = new System.Drawing.Size(200, 21);
+            this.cbNereden.TabIndex = 0;
             // 
             // dgvUcusListe
             // 
@@ -98,24 +94,22 @@ namespace bsm208donemprojesigrup5
             this.dgvUcusListe.AllowUserToDeleteRows = false;
             this.dgvUcusListe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUcusListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUcusListe.Location = new System.Drawing.Point(61, 354);
-            this.dgvUcusListe.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvUcusListe.Location = new System.Drawing.Point(46, 288);
             this.dgvUcusListe.Name = "dgvUcusListe";
             this.dgvUcusListe.ReadOnly = true;
             this.dgvUcusListe.RowHeadersWidth = 51;
             this.dgvUcusListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUcusListe.Size = new System.Drawing.Size(957, 185);
-            this.dgvUcusListe.TabIndex = 9;
+            this.dgvUcusListe.Size = new System.Drawing.Size(718, 150);
+            this.dgvUcusListe.TabIndex = 5;
             this.dgvUcusListe.DoubleClick += new System.EventHandler(this.dgvUcusListe_DoubleClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(56, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(42, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 29);
+            this.label1.Size = new System.Drawing.Size(109, 24);
             this.label1.TabIndex = 10;
             this.label1.Text = "Hava Yolları";
             // 
@@ -123,10 +117,9 @@ namespace bsm208donemprojesigrup5
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(352, 108);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(264, 35);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 29);
+            this.label2.Size = new System.Drawing.Size(72, 24);
             this.label2.TabIndex = 11;
             this.label2.Text = "Nereye";
             // 
@@ -134,65 +127,61 @@ namespace bsm208donemprojesigrup5
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(55, 108);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(42, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 29);
+            this.label3.Size = new System.Drawing.Size(85, 24);
             this.label3.TabIndex = 12;
             this.label3.Text = "Nereden";
             // 
-            // dtpDonusTarihi
+            // dtpSeferTarihi
             // 
-            this.dtpDonusTarihi.Location = new System.Drawing.Point(357, 268);
-            this.dtpDonusTarihi.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpDonusTarihi.Name = "dtpDonusTarihi";
-            this.dtpDonusTarihi.Size = new System.Drawing.Size(265, 22);
-            this.dtpDonusTarihi.TabIndex = 4;
-            // 
-            // dtpGidisTarihi
-            // 
-            this.dtpGidisTarihi.CustomFormat = "dd/MM/yyyy HH:mm ";
-            this.dtpGidisTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpGidisTarihi.Location = new System.Drawing.Point(61, 268);
-            this.dtpGidisTarihi.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpGidisTarihi.Name = "dtpGidisTarihi";
-            this.dtpGidisTarihi.ShowUpDown = true;
-            this.dtpGidisTarihi.Size = new System.Drawing.Size(265, 22);
-            this.dtpGidisTarihi.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(352, 225);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 29);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Dönüş Tarihi";
+            this.dtpSeferTarihi.CustomFormat = "dd/MM/yyyy HH:mm ";
+            this.dtpSeferTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpSeferTarihi.Location = new System.Drawing.Point(268, 218);
+            this.dtpSeferTarihi.Name = "dtpSeferTarihi";
+            this.dtpSeferTarihi.ShowUpDown = true;
+            this.dtpSeferTarihi.Size = new System.Drawing.Size(200, 20);
+            this.dtpSeferTarihi.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(56, 225);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(264, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 29);
+            this.label6.Size = new System.Drawing.Size(106, 24);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Gidiş Tarihi";
+            this.label6.Text = "Sefer Tarihi";
+            // 
+            // btnKullaniciAyarlari
+            // 
+            this.btnKullaniciAyarlari.Location = new System.Drawing.Point(674, 35);
+            this.btnKullaniciAyarlari.Name = "btnKullaniciAyarlari";
+            this.btnKullaniciAyarlari.Size = new System.Drawing.Size(114, 77);
+            this.btnKullaniciAyarlari.TabIndex = 7;
+            this.btnKullaniciAyarlari.Text = "Kullanıcı Ayarları";
+            this.btnKullaniciAyarlari.UseVisualStyleBackColor = true;
+            // 
+            // btnGirisYap
+            // 
+            this.btnGirisYap.Location = new System.Drawing.Point(519, 35);
+            this.btnGirisYap.Name = "btnGirisYap";
+            this.btnGirisYap.Size = new System.Drawing.Size(149, 77);
+            this.btnGirisYap.TabIndex = 6;
+            this.btnGirisYap.Text = "Giriş Yap";
+            this.btnGirisYap.UseVisualStyleBackColor = true;
             // 
             // frmRezervasyonEkrani
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGirisYap);
+            this.Controls.Add(this.btnKullaniciAyarlari);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dtpGidisTarihi);
-            this.Controls.Add(this.dtpDonusTarihi);
+            this.Controls.Add(this.dtpSeferTarihi);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -201,7 +190,6 @@ namespace bsm208donemprojesigrup5
             this.Controls.Add(this.cbNereye);
             this.Controls.Add(this.cbHavaYollari);
             this.Controls.Add(this.btnUcakBiletiAra);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRezervasyonEkrani";
             this.Text = "Rezarvasyon Ekranı";
             this.Load += new System.EventHandler(this.frmRezervasyonEkrani_Load);
@@ -220,9 +208,9 @@ namespace bsm208donemprojesigrup5
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dtpDonusTarihi;
-        private System.Windows.Forms.DateTimePicker dtpGidisTarihi;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtpSeferTarihi;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnKullaniciAyarlari;
+        private System.Windows.Forms.Button btnGirisYap;
     }
 }
