@@ -19,20 +19,40 @@ namespace MicroServices
 
         public DataTable ucusListe(Ucus u)
         {
-            string sorguString = "Select * FROM ucuslar " +
+            string[] sorguString = new string[3];
+            sorguString[0] = "Select u.ucuslarID, a1.acentaAdi, u.havayoluAdi, u.kalkisYeri, u.inisYeri, u.seferTarihi, a1.biletFiyat FROM ucuslar as u " +
+                                    "INNER JOIN acenta1Bilet as a1 ON u.ucuslarID = a1.ucusID " +
                                     "WHERE kalkisYeri=@kYeri " +
                                     "AND inisYeri =@iYeri " +
                                     "AND seferTarihi=@sTarih " +
                                     "AND havayoluAdi=@hAdi";
-            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
-            sorgu.Parameters.AddWithValue("@kYeri", u.kalkisYeri);
-            sorgu.Parameters.AddWithValue("@iYeri", u.inisYeri);
-            sorgu.Parameters.AddWithValue("@sTarih", u.seferTarih);
-            sorgu.Parameters.AddWithValue("@hAdi", u.havayoluAdi);
+
+            sorguString[1] = "Select u.ucuslarID, a2.acentaAdi, u.havayoluAdi, u.kalkisYeri, u.inisYeri, u.seferTarihi, a2.biletFiyat FROM ucuslar as u " +
+                                    "INNER JOIN acenta2Bilet as a2 ON u.ucuslarID = a2.ucusID " +
+                                    "WHERE kalkisYeri=@kYeri " +
+                                    "AND inisYeri =@iYeri " +
+                                    "AND seferTarihi=@sTarih " +
+                                    "AND havayoluAdi=@hAdi";
+
+            sorguString[2] = "Select u.ucuslarID, a3.acentaAdi, u.havayoluAdi, u.kalkisYeri, u.inisYeri, u.seferTarihi, a3.biletFiyat FROM ucuslar as u " +
+                                    "INNER JOIN acenta3Bilet as a3 ON u.ucuslarID = a3.ucusID " +
+                                    "WHERE kalkisYeri=@kYeri " +
+                                    "AND inisYeri =@iYeri " +
+                                    "AND seferTarihi=@sTarih " +
+                                    "AND havayoluAdi=@hAdi";
+
             baglanti.Open();
-            SqlDataAdapter da = new SqlDataAdapter(sorgu);
             DataTable dt = new DataTable();
-            da.Fill(dt);
+            for (int i = 0; i < 3; i++)
+            {
+                SqlCommand sorgu = new SqlCommand(sorguString[i], baglanti);
+                sorgu.Parameters.AddWithValue("@kYeri", u.kalkisYeri);
+                sorgu.Parameters.AddWithValue("@iYeri", u.inisYeri);
+                sorgu.Parameters.AddWithValue("@sTarih", u.seferTarih);
+                sorgu.Parameters.AddWithValue("@hAdi", u.havayoluAdi);
+                SqlDataAdapter da = new SqlDataAdapter(sorgu);
+                da.Fill(dt);
+            }
             baglanti.Close();
             return dt;
         }
