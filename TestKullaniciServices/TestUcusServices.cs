@@ -3,6 +3,7 @@ using System;
 using Entities;
 using MicroServices;
 using System.Data;
+using System.Collections.Generic;
 
 namespace TestServices
 {
@@ -24,7 +25,7 @@ namespace TestServices
             bool donus = servis.ucusEkle(denemeUcus);
             Assert.AreEqual(donus, true);
         }
-
+        
         [TestMethod]
         public void ucusListe()
         {
@@ -36,6 +37,19 @@ namespace TestServices
             DataTable dt = servis.ucusListe(arananUcus);
             bool sonuc = false;
             if (dt != null && dt.Rows.Count > 0)
+            {
+                sonuc = true;
+            }
+            Assert.AreEqual(sonuc, true);
+        }
+        [TestMethod]
+        public void ucusListeYonetici()
+        {
+            List<Ucus> ucuslar = new List<Ucus>();
+
+            ucuslar = servis.ucusListeYonetici();
+            bool sonuc = false;
+            if (ucuslar.Count != 0)
             {
                 sonuc = true;
             }

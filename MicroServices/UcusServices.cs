@@ -16,6 +16,26 @@ namespace MicroServices
         {
             baglanti = new SqlConnection("Data Source = localhost\\SQLEXPRESS; Initial Catalog = bsm208donemprojesigrup5; Integrated Security = True;");
         }
+        public List<Ucus> ucusListeYonetici()
+        {
+            string sorguString = "Select ucuslarID, havayoluAdi, kalkisYeri, inisYeri, seferTarihi FROM ucuslar";
+            baglanti.Open();
+            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
+            SqlDataReader cikti = sorgu.ExecuteReader(); // İşlemdemden etkilenen kayıtları getirir
+            List<Ucus> ucuslar = new List<Ucus>();
+            while (cikti.Read())
+            {
+                Ucus u = new Ucus();
+                u.id = Convert.ToInt32(cikti["ucuslarID"]);
+                u.havayoluAdi = Convert.ToString(cikti["havayoluAdi"]);
+                u.kalkisYeri = Convert.ToString(cikti["kalkisYeri"]);
+                u.inisYeri = Convert.ToString(cikti["inisYeri"]);
+                u.seferTarih = Convert.ToDateTime(cikti["seferTarihi"]);
+                ucuslar.Add(u);
+            }
+            baglanti.Close();
+            return ucuslar;
+        }
 
         public DataTable ucusListe(Ucus u)
         {
