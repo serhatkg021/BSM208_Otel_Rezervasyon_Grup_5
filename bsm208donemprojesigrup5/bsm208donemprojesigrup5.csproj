@@ -49,6 +49,12 @@
     <Compile Include="frmGirisEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmKoltuklar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKoltuklar.Designer.cs">
+      <DependentUpon>frmKoltuklar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKullaniciKayitEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,16 +70,37 @@
     <Compile Include="frmRezervasyonEkrani.Designer.cs">
       <DependentUpon>frmRezervasyonEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKullaniciRezervasyonlariEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKullaniciRezervasyonlariEkrani.Designer.cs">
+      <DependentUpon>frmKullaniciRezervasyonlariEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmYoneticiPaneliTasarimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmYoneticiPaneliTasarimi.Designer.cs">
+      <DependentUpon>frmYoneticiPaneliTasarimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmGirisEkrani.resx">
       <DependentUpon>frmGirisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKoltuklar.resx">
+      <DependentUpon>frmKoltuklar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKullaniciKayitEkrani.resx">
       <DependentUpon>frmKullaniciKayitEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRezervasyonEkrani.resx">
       <DependentUpon>frmRezervasyonEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKullaniciRezervasyonlariEkrani.resx">
+      <DependentUpon>frmKullaniciRezervasyonlariEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmYoneticiPaneliTasarimi.resx">
+      <DependentUpon>frmYoneticiPaneliTasarimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

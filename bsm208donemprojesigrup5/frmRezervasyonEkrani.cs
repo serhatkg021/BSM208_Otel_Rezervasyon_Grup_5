@@ -55,7 +55,7 @@ namespace bsm208donemprojesigrup5
         {
             if (sistemKullanici == null)
             {
-                btnKullaniciAyarlari.Enabled = false;
+                btnKullaniciRezervasyonlar.Enabled = false;
             }
             else
             {
