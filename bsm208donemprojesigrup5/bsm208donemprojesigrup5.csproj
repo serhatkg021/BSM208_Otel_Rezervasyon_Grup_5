@@ -76,11 +76,11 @@
     <Compile Include="frmKullaniciRezervasyonlariEkrani.Designer.cs">
       <DependentUpon>frmKullaniciRezervasyonlariEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmYoneticiPaneliTasarimi.cs">
+    <Compile Include="frmYoneticiPaneliEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmYoneticiPaneliTasarimi.Designer.cs">
-      <DependentUpon>frmYoneticiPaneliTasarimi.cs</DependentUpon>
+    <Compile Include="frmYoneticiPaneliEkrani.Designer.cs">
+      <DependentUpon>frmYoneticiPaneliEkrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -99,8 +99,8 @@
     <EmbeddedResource Include="frmKullaniciRezervasyonlariEkrani.resx">
       <DependentUpon>frmKullaniciRezervasyonlariEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmYoneticiPaneliTasarimi.resx">
-      <DependentUpon>frmYoneticiPaneliTasarimi.cs</DependentUpon>
+    <EmbeddedResource Include="frmYoneticiPaneliEkrani.resx">
+      <DependentUpon>frmYoneticiPaneliEkrani.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
