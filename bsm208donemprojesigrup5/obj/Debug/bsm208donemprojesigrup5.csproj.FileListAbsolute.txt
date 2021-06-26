@@ -43,23 +43,3 @@ D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\bsm208donemproj
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CopyComplete
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.exe
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.pdb
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.exe.config
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.exe
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\bsm208donemprojesigrup5.pdb
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\Entities.dll
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\MicroServices.dll
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\Entities.pdb
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\bin\Debug\MicroServices.pdb
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.AssemblyReference.cache
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmGirisEkrani.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKullaniciKayitEkrani.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmRezervasyonEkrani.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.Properties.Resources.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.GenerateResource.cache
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CoreCompileInputs.cache
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.csproj.CopyComplete
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.exe
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.pdb
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKoltuklar.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKullaniciRezervasyonlariEkrani.resources
-C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmYoneticiPaneliEkrani.resources
