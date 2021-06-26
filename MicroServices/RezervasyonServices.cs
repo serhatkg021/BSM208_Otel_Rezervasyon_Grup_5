@@ -34,6 +34,14 @@ namespace MicroServices
             int ciktiSayi = sorgu.ExecuteNonQuery(); // İşlemdemden etkilenen kayıt sayısını getirir
             if (ciktiSayi > 0)
             {
+                string sorguUpdateString = "UPDATE ucusKoltukDurum " +
+                                            "SET dolulukDurum = @dDurum " +
+                                            "WHERE ucusID = @uID AND koltukNo = @kNo";
+                SqlCommand sorguUpdate = new SqlCommand(sorguUpdateString, baglanti);
+                sorguUpdate.Parameters.AddWithValue("@dDurum", true);
+                sorguUpdate.Parameters.AddWithValue("@uID", r.ucus.id);
+                sorguUpdate.Parameters.AddWithValue("@kNo", r.koltukNo);
+                sorguUpdate.ExecuteNonQuery();
                 donus = true;
             }
             baglanti.Close();
