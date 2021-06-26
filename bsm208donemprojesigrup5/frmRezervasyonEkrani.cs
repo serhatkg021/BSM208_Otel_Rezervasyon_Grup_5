@@ -47,8 +47,16 @@ namespace bsm208donemprojesigrup5
             secilenUcus.kalkisYeri = dgvUcusListe.SelectedRows[0].Cells["kalkisYeri"].Value.ToString();
             secilenUcus.havayoluAdi = dgvUcusListe.SelectedRows[0].Cells["havayoluAdi"].Value.ToString();
             secilenUcus.seferTarih = Convert.ToDateTime(dgvUcusListe.SelectedRows[0].Cells["seferTarihi"].Value);
-            //frmKoltukEkrani frmK = new frmKoltukEkrani(secilenUcus,sistemKullanici);
-            MessageBox.Show(secilenUcus.id + " " + secilenUcus.havayoluAdi + " " + secilenUcus.kalkisYeri + " " + secilenUcus.inisYeri + " " + secilenUcus.seferTarih);
+            frmKoltuklar frmK;
+            if (sistemKullanici == null)
+            {
+               frmK = new frmKoltuklar(null,secilenUcus);
+            }
+            else
+            {
+               frmK = new frmKoltuklar(sistemKullanici, secilenUcus);
+            }
+            frmK.Show();
         }
 
         private void frmRezervasyonEkrani_Load(object sender, EventArgs e)
@@ -65,11 +73,17 @@ namespace bsm208donemprojesigrup5
 
         public bool sayfaDurumu { get; set; }
         private void btnGirisYap_Click(object sender, EventArgs e)
-        {            
+        {
             frmGirisEkrani frmG = new frmGirisEkrani();
             frmG.Show();
             this.Close();
             sayfaDurumu = true;
+        }
+
+        private void btnKullaniciRezervasyonlar_Click(object sender, EventArgs e)
+        {
+            frmKullaniciRezervasyonlariEkrani frmKRE = new frmKullaniciRezervasyonlariEkrani(sistemKullanici);
+            frmKRE.Show();
         }
     }
 }
