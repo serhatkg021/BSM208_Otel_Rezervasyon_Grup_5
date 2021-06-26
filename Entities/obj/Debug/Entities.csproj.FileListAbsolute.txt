@@ -16,3 +16,9 @@ D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\Entities\obj\De
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.dll
 D:\Okul\Programlama Dilleri\Dönem Proje\bsm208donemprojesigrup5\Entities\obj\Debug\Entities.pdb
+C:\Users\PC\Desktop\bsmproje\Entities\bin\Debug\Entities.dll
+C:\Users\PC\Desktop\bsmproje\Entities\bin\Debug\Entities.pdb
+C:\Users\PC\Desktop\bsmproje\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\bsmproje\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\bsmproje\Entities\obj\Debug\Entities.dll
+C:\Users\PC\Desktop\bsmproje\Entities\obj\Debug\Entities.pdb
