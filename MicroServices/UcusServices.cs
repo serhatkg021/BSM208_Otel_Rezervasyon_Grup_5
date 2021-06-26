@@ -80,17 +80,44 @@ namespace MicroServices
         public bool ucusEkle(Ucus u)
         { 
             bool donus = false;
-            string sorguString = "INSERT INTO ucuslar (kalkisYeri,inisYeri,havayoluAdi,seferTarihi,aktiflik) Values (@uKalkisYeri , @uInisYeri, @uHavayoluAdi, @uSeferTarih, @uDurum)";
-            SqlCommand sorgu = new SqlCommand(sorguString, baglanti);
-            sorgu.Parameters.AddWithValue("@uKalkisYeri", u.kalkisYeri);
-            sorgu.Parameters.AddWithValue("@uInisYeri", u.inisYeri);
-            sorgu.Parameters.AddWithValue("@uHavayoluAdi", u.havayoluAdi);
-            sorgu.Parameters.AddWithValue("@uSeferTarih", u.seferTarih);
-            sorgu.Parameters.AddWithValue("@uDurum", u.durum);
+            string sorguUcusString = "INSERT INTO ucuslar (kalkisYeri,inisYeri,havayoluAdi,seferTarihi,aktiflik) Values (@uKalkisYeri , @uInisYeri, @uHavayoluAdi, @uSeferTarih, @uDurum)";
+            SqlCommand sorguUcus = new SqlCommand(sorguUcusString, baglanti);
+            sorguUcus.Parameters.AddWithValue("@uKalkisYeri", u.kalkisYeri);
+            sorguUcus.Parameters.AddWithValue("@uInisYeri", u.inisYeri);
+            sorguUcus.Parameters.AddWithValue("@uHavayoluAdi", u.havayoluAdi);
+            sorguUcus.Parameters.AddWithValue("@uSeferTarih", u.seferTarih);
+            sorguUcus.Parameters.AddWithValue("@uDurum", u.durum);
             baglanti.Open();
-            int ciktiSayi = sorgu.ExecuteNonQuery(); // İşlemdemden etkilenen kayıt sayısını getirir
+            int ciktiSayi = sorguUcus.ExecuteNonQuery(); // İşlemdemden etkilenen kayıt sayısını getirir
             if (ciktiSayi > 0)
             {
+                string sorguUcusIDString = "Select ucuslarID FROM ucuslar " +
+                                        "WHERE kalkisYeri= @uKalkisYeri " +
+                                        "AND inisYeri = @uInisYeri " +
+                                        "AND havayoluAdi= @uHavayoluAdi " +
+                                        "AND seferTarihi= @uSeferTarih " +
+                                        "AND aktiflik= @uDurum ";
+                SqlCommand sorguUcusID = new SqlCommand(sorguUcusIDString, baglanti);
+                sorguUcusID.Parameters.AddWithValue("@uKalkisYeri", u.kalkisYeri);
+                sorguUcusID.Parameters.AddWithValue("@uInisYeri", u.inisYeri);
+                sorguUcusID.Parameters.AddWithValue("@uHavayoluAdi", u.havayoluAdi);
+                sorguUcusID.Parameters.AddWithValue("@uSeferTarih", u.seferTarih);
+                sorguUcusID.Parameters.AddWithValue("@uDurum", u.durum);
+                SqlDataReader ciktiUcusID = sorguUcusID.ExecuteReader();
+                ciktiUcusID.Read();
+                int ucusID = Convert.ToInt32(ciktiUcusID["ucuslarID"]);
+                ciktiUcusID.Close();
+
+                string sorguKoltukString = "INSERT INTO ucusKoltukDurum (ucusID,koltukNo,dolulukDurum,aktiflik) Values (@kUID , @kNO, @kKoltukDurum, @kDurum)";
+                for (int i = 1; i <= 12; i++)
+                {
+                    SqlCommand sorguKoltuk = new SqlCommand(sorguKoltukString, baglanti);
+                    sorguKoltuk.Parameters.AddWithValue("@kUID", ucusID);
+                    sorguKoltuk.Parameters.AddWithValue("@kNO", i);
+                    sorguKoltuk.Parameters.AddWithValue("@kKoltukDurum", false);
+                    sorguKoltuk.Parameters.AddWithValue("@kDurum", u.durum);
+                    sorguKoltuk.ExecuteNonQuery();
+                }
                 donus = true;
             }
             baglanti.Close();
