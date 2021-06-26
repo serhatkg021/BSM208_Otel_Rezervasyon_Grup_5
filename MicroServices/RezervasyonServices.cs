@@ -68,6 +68,8 @@ namespace MicroServices
                 u.kalkisYeri = Convert.ToString(cikti["kalkisYeri"]);
                 u.inisYeri = Convert.ToString(cikti["inisYeri"]);
                 u.seferTarih = Convert.ToDateTime(cikti["seferTarihi"]);
+                kr.ucus = u;
+                kr.kullanici = rk;
                 kr.koltukNo = Convert.ToInt32(cikti["koltukNo"]);
                 kr.biletFiyat = Convert.ToDecimal(cikti["biletFiyati"]);
                 kr.olusturmaTarih = Convert.ToDateTime(cikti["olusturmaTarih"]);
@@ -102,6 +104,8 @@ namespace MicroServices
                 u.kalkisYeri = Convert.ToString(cikti["kalkisYeri"]);
                 u.inisYeri = Convert.ToString(cikti["inisYeri"]);
                 u.seferTarih = Convert.ToDateTime(cikti["seferTarihi"]);
+                kr.ucus = u;
+                kr.kullanici = rk;
                 kr.koltukNo = Convert.ToInt32(cikti["koltukNo"]);
                 kr.biletFiyat = Convert.ToDecimal(cikti["biletFiyati"]);
                 kr.olusturmaTarih = Convert.ToDateTime(cikti["olusturmaTarih"]);
