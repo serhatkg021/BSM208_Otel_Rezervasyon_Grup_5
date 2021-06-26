@@ -16,10 +16,10 @@ namespace TestServices
         public void ucusEkle()
         {
             Ucus denemeUcus = new Ucus();
-            denemeUcus.havayoluAdi = "PEGASUS";
+            denemeUcus.havayoluAdi = "ONUR AİR";
             denemeUcus.kalkisYeri = "İstanbul Havalimanı";
             denemeUcus.inisYeri = "Ankara Esenboğa Havalimanı";
-            denemeUcus.seferTarih = Convert.ToDateTime("18.06.2021 18:30:00");
+            denemeUcus.seferTarih = Convert.ToDateTime("26.06.2021 20:00:00");
             denemeUcus.durum = true;
 
             bool donus = servis.ucusEkle(denemeUcus);

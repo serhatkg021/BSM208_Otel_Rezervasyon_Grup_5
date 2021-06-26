@@ -55,6 +55,7 @@
     <Compile Include="TestUcusServices.cs" />
     <Compile Include="TestRezervasyonServices.cs" />
     <Compile Include="TestBildirimServices.cs" />
+    <Compile Include="TestKoltukServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

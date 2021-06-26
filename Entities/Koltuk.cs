@@ -9,7 +9,6 @@ namespace Entities
     public class Koltuk
     {
         public int koltuklarID { get; set; }
-        public Ucus ucus { get; set; }
         public int koltukNo { get; set; }
         public Boolean koltukDurumu { get; set; }
         public Boolean durum { get; set; }
