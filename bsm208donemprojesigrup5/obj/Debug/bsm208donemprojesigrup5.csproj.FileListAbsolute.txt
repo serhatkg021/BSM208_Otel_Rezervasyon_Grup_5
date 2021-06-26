@@ -63,3 +63,8 @@ C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojes
 C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKoltuklar.resources
 C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKullaniciRezervasyonlariEkrani.resources
 C:\Users\PC\Desktop\bsmproje\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmYoneticiPaneliEkrani.resources
+C:\Users\SKG\Desktop\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKoltuklar.resources
+C:\Users\SKG\Desktop\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKullaniciKayitEkrani.resources
+C:\Users\SKG\Desktop\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmRezervasyonEkrani.resources
+C:\Users\SKG\Desktop\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmKullaniciRezervasyonlariEkrani.resources
+C:\Users\SKG\Desktop\bsm208donemprojesigrup5\bsm208donemprojesigrup5\obj\Debug\bsm208donemprojesigrup5.frmYoneticiPaneliEkrani.resources
