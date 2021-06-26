@@ -15,6 +15,8 @@ namespace bsm208donemprojesigrup5
     public partial class frmGirisEkrani : Form
     {
         KullaniciServices servis = new KullaniciServices();
+        BildirimServices servisB = new BildirimServices();
+
         public frmGirisEkrani()
         {
             InitializeComponent();
@@ -33,9 +35,22 @@ namespace bsm208donemprojesigrup5
 
             if (donenKullanici != null)
             {
-                MessageBox.Show("Hoşgeldiniz");
-                frmRezervasyonEkrani frmR = new frmRezervasyonEkrani(donenKullanici);
-                frmR.Show();
+                MessageBox.Show("Hoşgeldiniz "+donenKullanici.kullaniciAdiSoyadi);
+                if (donenKullanici.hesapTur == 1)
+                {
+                    frmYoneticiPaneliEkrani frmYP = new frmYoneticiPaneliEkrani(donenKullanici);
+                    frmYP.Show();
+                }
+                else if (donenKullanici.hesapTur == 2)
+                {
+                    List<Bildirim> bildirimler = servisB.bildirimKullaniciKontrol(donenKullanici);
+                    for (int i = 0; i < bildirimler.Count; i++)
+                    {
+                        MessageBox.Show("ID'si: " + bildirimler[i].ucus.id + " olan uçuşunuza '" + bildirimler[i].bildirimIcerigi + "' bildirimi eklenmiştir.");
+                    }
+                    frmRezervasyonEkrani frmR = new frmRezervasyonEkrani(donenKullanici);
+                    frmR.Show();                    
+                }
                 this.Hide();
             }
             else
