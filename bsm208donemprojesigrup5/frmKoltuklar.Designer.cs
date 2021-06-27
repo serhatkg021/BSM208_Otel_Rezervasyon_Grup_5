@@ -220,6 +220,7 @@ namespace bsm208donemprojesigrup5
             // 
             // cbİstenenKoltuguSecin
             // 
+            this.cbİstenenKoltuguSecin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbİstenenKoltuguSecin.FormattingEnabled = true;
             this.cbİstenenKoltuguSecin.Location = new System.Drawing.Point(96, 409);
             this.cbİstenenKoltuguSecin.Margin = new System.Windows.Forms.Padding(4);
@@ -237,6 +238,7 @@ namespace bsm208donemprojesigrup5
             this.btnRezervasyonuTamamla.TabIndex = 1;
             this.btnRezervasyonuTamamla.Text = "Rezervasyonu Tamamla";
             this.btnRezervasyonuTamamla.UseVisualStyleBackColor = true;
+            this.btnRezervasyonuTamamla.Click += new System.EventHandler(this.btnRezervasyonuTamamla_Click);
             // 
             // tbCamSol
             // 
