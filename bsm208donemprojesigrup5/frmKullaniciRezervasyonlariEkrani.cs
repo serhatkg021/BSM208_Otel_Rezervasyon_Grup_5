@@ -32,6 +32,7 @@ namespace bsm208donemprojesigrup5
                 tablo.Columns.Add("İniş Yeri", typeof(string));
                 tablo.Columns.Add("Havayolu Adı", typeof(string));
                 tablo.Columns.Add("Sefer Tarihi", typeof(DateTime));
+                tablo.Columns.Add("Koltuk No", typeof(int));
                 tablo.Columns.Add("Bilet Fiyatı", typeof(decimal));
                 tablo.Columns.Add("Rezervasyon Tarihi", typeof(DateTime));
                 List<Rezervasyon> rezervasyonlar = servis.kullaniciRezervasyonListe(sistemKullanici);
@@ -43,6 +44,7 @@ namespace bsm208donemprojesigrup5
                                    rezervasyonlar[i].ucus.inisYeri,
                                    rezervasyonlar[i].ucus.havayoluAdi,
                                    rezervasyonlar[i].ucus.seferTarih,
+                                   rezervasyonlar[i].koltukNo,
                                    rezervasyonlar[i].biletFiyat,
                                    rezervasyonlar[i].olusturmaTarih);
                 }
