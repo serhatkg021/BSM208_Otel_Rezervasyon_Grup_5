@@ -47,6 +47,10 @@ namespace bsm208donemprojesigrup5
             secilenUcus.kalkisYeri = dgvUcusListe.SelectedRows[0].Cells["kalkisYeri"].Value.ToString();
             secilenUcus.havayoluAdi = dgvUcusListe.SelectedRows[0].Cells["havayoluAdi"].Value.ToString();
             secilenUcus.seferTarih = Convert.ToDateTime(dgvUcusListe.SelectedRows[0].Cells["seferTarihi"].Value);
+            int biletFiyat = Convert.ToInt32(dgvUcusListe.SelectedRows[0].Cells["biletFiyat"].Value);
+            string acentaAdi = dgvUcusListe.SelectedRows[0].Cells["acentaAdi"].Value.ToString();
+
+
             frmKoltuklar frmK;
             if (sistemKullanici == null)
             {
@@ -54,7 +58,7 @@ namespace bsm208donemprojesigrup5
             }
             else
             {
-               frmK = new frmKoltuklar(sistemKullanici, secilenUcus);
+               frmK = new frmKoltuklar(sistemKullanici, secilenUcus, biletFiyat, acentaAdi);
             }
             frmK.Show();
         }

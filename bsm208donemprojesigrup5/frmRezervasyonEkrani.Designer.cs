@@ -48,7 +48,7 @@ namespace bsm208donemprojesigrup5
             // btnUcakBiletiAra
             // 
             this.btnUcakBiletiAra.Location = new System.Drawing.Point(692, 177);
-            this.btnUcakBiletiAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUcakBiletiAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnUcakBiletiAra.Name = "btnUcakBiletiAra";
             this.btnUcakBiletiAra.Size = new System.Drawing.Size(359, 116);
             this.btnUcakBiletiAra.TabIndex = 4;
@@ -58,36 +58,40 @@ namespace bsm208donemprojesigrup5
             // 
             // cbHavaYollari
             // 
+            this.cbHavaYollari.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHavaYollari.FormattingEnabled = true;
             this.cbHavaYollari.Items.AddRange(new object[] {
             "THY",
-            "PEGASUS"});
+            "PEGASUS",
+            "ONUR AİR"});
             this.cbHavaYollari.Location = new System.Drawing.Point(61, 267);
-            this.cbHavaYollari.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbHavaYollari.Margin = new System.Windows.Forms.Padding(4);
             this.cbHavaYollari.Name = "cbHavaYollari";
             this.cbHavaYollari.Size = new System.Drawing.Size(265, 24);
             this.cbHavaYollari.TabIndex = 2;
             // 
             // cbNereye
             // 
+            this.cbNereye.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNereye.FormattingEnabled = true;
             this.cbNereye.Items.AddRange(new object[] {
             "Ankara Esenboğa Havalimanı",
             "İstanbul Havalimanı"});
             this.cbNereye.Location = new System.Drawing.Point(357, 112);
-            this.cbNereye.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbNereye.Margin = new System.Windows.Forms.Padding(4);
             this.cbNereye.Name = "cbNereye";
             this.cbNereye.Size = new System.Drawing.Size(265, 24);
             this.cbNereye.TabIndex = 1;
             // 
             // cbNereden
             // 
+            this.cbNereden.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNereden.FormattingEnabled = true;
             this.cbNereden.Items.AddRange(new object[] {
             "İstanbul Havalimanı",
             "Ankara Esenboğa Havalimanı"});
             this.cbNereden.Location = new System.Drawing.Point(61, 112);
-            this.cbNereden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbNereden.Margin = new System.Windows.Forms.Padding(4);
             this.cbNereden.Name = "cbNereden";
             this.cbNereden.Size = new System.Drawing.Size(265, 24);
             this.cbNereden.TabIndex = 0;
@@ -99,7 +103,7 @@ namespace bsm208donemprojesigrup5
             this.dgvUcusListe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvUcusListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvUcusListe.Location = new System.Drawing.Point(61, 354);
-            this.dgvUcusListe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvUcusListe.Margin = new System.Windows.Forms.Padding(4);
             this.dgvUcusListe.Name = "dgvUcusListe";
             this.dgvUcusListe.ReadOnly = true;
             this.dgvUcusListe.RowHeadersWidth = 51;
@@ -146,7 +150,7 @@ namespace bsm208donemprojesigrup5
             this.dtpSeferTarihi.CustomFormat = "dd/MM/yyyy HH:mm ";
             this.dtpSeferTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpSeferTarihi.Location = new System.Drawing.Point(357, 268);
-            this.dtpSeferTarihi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpSeferTarihi.Margin = new System.Windows.Forms.Padding(4);
             this.dtpSeferTarihi.Name = "dtpSeferTarihi";
             this.dtpSeferTarihi.ShowUpDown = true;
             this.dtpSeferTarihi.Size = new System.Drawing.Size(265, 22);
@@ -166,7 +170,7 @@ namespace bsm208donemprojesigrup5
             // btnKullaniciRezervasyonlar
             // 
             this.btnKullaniciRezervasyonlar.Location = new System.Drawing.Point(899, 43);
-            this.btnKullaniciRezervasyonlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnKullaniciRezervasyonlar.Margin = new System.Windows.Forms.Padding(4);
             this.btnKullaniciRezervasyonlar.Name = "btnKullaniciRezervasyonlar";
             this.btnKullaniciRezervasyonlar.Size = new System.Drawing.Size(152, 95);
             this.btnKullaniciRezervasyonlar.TabIndex = 7;
@@ -177,7 +181,7 @@ namespace bsm208donemprojesigrup5
             // btnGirisYap
             // 
             this.btnGirisYap.Location = new System.Drawing.Point(692, 43);
-            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGirisYap.Margin = new System.Windows.Forms.Padding(4);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(199, 95);
             this.btnGirisYap.TabIndex = 6;
@@ -204,7 +208,7 @@ namespace bsm208donemprojesigrup5
             this.Controls.Add(this.cbNereye);
             this.Controls.Add(this.cbHavaYollari);
             this.Controls.Add(this.btnUcakBiletiAra);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRezervasyonEkrani";
             this.Text = "Rezarvasyon Ekranı";
             this.Load += new System.EventHandler(this.frmRezervasyonEkrani_Load);
