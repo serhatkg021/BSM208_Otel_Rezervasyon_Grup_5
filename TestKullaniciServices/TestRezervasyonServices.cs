@@ -22,7 +22,7 @@ namespace TestServices
             denemeRezervasyon.kullanici = denemeKullanici;
             denemeRezervasyon.ucus = denemeUcus;
             denemeRezervasyon.koltukNo = 1;
-            denemeRezervasyon.acentaAdi = "Acenta 1";
+            denemeRezervasyon.acentaAdi = "Acenta C";
             denemeRezervasyon.biletFiyat = 15;
             denemeRezervasyon.durum = true;
             bool sonuc = servis.kullaniciRezervasyonEkle(denemeRezervasyon);
