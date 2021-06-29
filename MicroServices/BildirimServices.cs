@@ -51,24 +51,24 @@ namespace MicroServices
             SqlDataReader cikti = sorgu.ExecuteReader(); // İşlemdemden etkilenen kayıtları getirir
             List<Bildirim> bildirimler = new List<Bildirim>();
 
-            cikti.Read();
-            Ucus u = new Ucus();
-            u.id = Convert.ToInt32(cikti["ucuslarID"]);
-            u.havayoluAdi = Convert.ToString(cikti["havayoluAdi"]);
-            u.kalkisYeri = Convert.ToString(cikti["kalkisYeri"]);
-            u.inisYeri = Convert.ToString(cikti["inisYeri"]);
-            u.seferTarih = Convert.ToDateTime(cikti["seferTarihi"]);
-            Bildirim bildirim = new Bildirim();
-            bildirim.bildirimlerID = Convert.ToInt32(cikti["bildirimlerID"]);
-            bildirim.ucus = u;
-            bildirim.bildirimIcerigi = Convert.ToString(cikti["bildirimIcerigi"]);
-            bildirim.durum = Convert.ToBoolean(cikti["aktiflik"]);
-            bildirimler.Add(bildirim);
+            if (cikti.Read())
+            {
+                Ucus u = new Ucus();
+                u.id = Convert.ToInt32(cikti["ucuslarID"]);
+                u.havayoluAdi = Convert.ToString(cikti["havayoluAdi"]);
+                u.kalkisYeri = Convert.ToString(cikti["kalkisYeri"]);
+                u.inisYeri = Convert.ToString(cikti["inisYeri"]);
+                u.seferTarih = Convert.ToDateTime(cikti["seferTarihi"]);
+                Bildirim bildirim = new Bildirim();
+                bildirim.bildirimlerID = Convert.ToInt32(cikti["bildirimlerID"]);
+                bildirim.ucus = u;
+                bildirim.bildirimIcerigi = Convert.ToString(cikti["bildirimIcerigi"]);
+                bildirim.durum = Convert.ToBoolean(cikti["aktiflik"]);
+                bildirimler.Add(bildirim);
+            }
             cikti.Close();
             baglanti.Close();
             return bildirimler;
         }
-
-
     }
 }

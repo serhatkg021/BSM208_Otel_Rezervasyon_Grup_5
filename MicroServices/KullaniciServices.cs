@@ -37,7 +37,7 @@ namespace MicroServices
                 girisYapan.kullaniciAdiSoyadi = Convert.ToString(cikti["kullaniciAdiSoyadi"]);
                 girisYapan.dogumTarih = Convert.ToDateTime(cikti["dogumTarihi"]);
                 girisYapan.hesapTur = Convert.ToInt32(cikti["hesapTuru"]);
-                girisYapan.olusturulmaTarih = Convert.ToDateTime(cikti["olusturulmaTarihi"]);
+                girisYapan.olusturulmaTarih = Convert.ToDateTime(cikti["olusturmaTarihi"]);
                 girisYapan.durum = Convert.ToBoolean(cikti["aktiflik"]);
             }
             else
